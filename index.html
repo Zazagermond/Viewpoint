@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViewPoint</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -45,25 +46,26 @@
             </ul>
         </nav>
     </article>
-    <main class="logining">
-    <section>
-        <button type="button" onclick="window.location.href='ArtistLogin.html'">Artist Login</button>
-        <article class="articlepad">
-            <p>Are you an artist with an artwork of a specific view point? Upload here and sell your art!</p>
-        </article>
-    </section>
-    <section>
-        <button type="button" onclick="window.location.href='CustomerLogin.html'">Customer Login</button>
-        <article class="articlepad">Would you like to buy an artwork?</article>
-    </section>
-    <article class="articlepad"> 
-        <button type="button" onclick="window.location.href='CreateAccount.html'" style="text-align: center;">Create Account</button>
-        <p style="text-align: center;">Dont have an account? Create one!</p>
-    </article>
-    </main>
+    <div>
+        <video width=100% height=80% autoplay muted><source src="./Images/Artiststudio.mp4" type="video/mp4" id="mainvid"></video>
+        </div>
+        <h1 id="idxtitle">What is ViewPoint?</h1>
+        <article>
+            <p id="psp">Have you got a special place that is close to your heart, a place where maybe you got engaged or had your first kiss? Well now you can always have that place near. By scaning the QR code of said location or by searching our site for the location you can find beautiful artworks of said spaces! You can purchase thease artworks and have them dilvered to your door. With this you will be supporting local artist too!</p>
+            <p id="psp">Or have you ever gone out of your way to a place beacuse suposidly it has a beautiful view, but when you arrive it is overcast and the view is garbage! Well now you can south your frustrations a bit with thease artists inurpretations of the senics view! </p>
+            <p id="psp"> Explore our site! Find an Artwork! Support a local artist!</p><br><br>
+        </article> 
+        
+        <div id="cookieConsent">
+            This website uses cookies to ensure you get the best experience. 
+            <button onclick="acceptCookies()">Got it!</button>
+        </div> 
     <footer>
         <p>Copyright</p>
         <p><em>The Malicious Hadeda</em></p>
+        <p id="Lang"></p>
+        
     </footer>
+
 </body>
 </html>

@@ -45,21 +45,25 @@
             </ul>
         </nav>
     </article>
-    <main class="logining">
-    <section>
-        <button type="button" onclick="window.location.href='ArtistLogin.html'">Artist Login</button>
-        <article class="articlepad">
-            <p>Are you an artist with an artwork of a specific view point? Upload here and sell your art!</p>
-        </article>
-    </section>
-    <section>
-        <button type="button" onclick="window.location.href='CustomerLogin.html'">Customer Login</button>
-        <article class="articlepad">Would you like to buy an artwork?</article>
-    </section>
-    <article class="articlepad"> 
-        <button type="button" onclick="window.location.href='CreateAccount.html'" style="text-align: center;">Create Account</button>
-        <p style="text-align: center;">Dont have an account? Create one!</p>
-    </article>
+    <main>
+        <div class="sidebar" >
+            <h2>Locations</h2><br>
+            <ul id="locat1">
+            <li><a href="Bots.html" style="text-decoration: none; color: black;">Botanical Gardens</a></li>
+            <li> <a href="Monument.html" style="text-decoration: none; color: black;">Monument</a></li>
+            <li><a href="MountainDrive.html" style="text-decoration: none; color: black;">Mountain Drive</a></li>
+        </div> 
+        <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61414.486163833935!2d26.53501542860582!3d-33.296687619973255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1725783635855!5m2!1sen!2sza" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+        </div>
     </main>
     <footer>
         <p>Copyright</p>
