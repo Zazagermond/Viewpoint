@@ -1,0 +1,625 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',Arial, sans-serif;
+}
+
+form {
+    display:grid;
+    padding: 20%;
+}
+.aboutmamout{
+    font-weight: bold;
+    font-size: 20px;
+}
+#idxtitle{
+    text-align: center;
+}
+.accomodate{
+    column-count: 3;
+    column-gap: 10%;
+    column-rule-style: groove;
+    column-rule-width: 5%;
+    column-rule-color: #4C51A3;
+}
+#langop{
+    
+    color: white;
+    padding: 15px;
+    padding-top: 10px;
+    text-align: center;
+    z-index:1;
+    /*display: none;  /* Hidden by default */
+    
+}
+#container {
+    position: relative; /* Ensures contained elements are positioned relative to this */
+    width:200px;
+    height: 200px;
+    background-color: rgba(92, 119, 137, 0.322);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+#gettoreview{
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:20px;
+    height:30px;
+    z-index: 3000;
+
+}
+/*pseudo class and id related styles for the review box*/
+/*Cookie box related styles*/
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    /*display: none;  /* Hidden by default */
+    z-index: 1000;
+  }
+  
+  #cookieConsent button {
+    background-color: #f1d600;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+header {
+    background-color: #4C51A3;
+    color: white;
+    padding: 20px 0;
+    text-align: left;
+    position: sticky;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+}
+
+.logo h1 {
+    font-size: 50px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #A9D7C3;
+    padding: 10px 0;
+    text-align: right;
+    position: sticky;
+    top: 0;  
+    z-index: 1000;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/*Phones*/
+
+.menu-icon {    
+    align-items: right;
+}
+.menu-icon img{
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 5%;
+}
+#menu-toggle {
+    display: none;
+}
+/* Main Section */
+main {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #4C51A3;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+footer p {
+    margin: 5px 0;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+footer p em {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(169, 215, 195, 0.7);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Style for each item in the dropdown */
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+}
+/* Change color of dropdown items on hover */
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Style for the dropdown link */
+.dropdown a {
+    display: inline-block;
+    text-decoration: none;
+}
+/*Styling Map*/
+.map-container {
+    width: 70%;
+    max-width: 70%;
+    align-items: right;
+    right: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    float: right;
+}
+.map-container iframe {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Style for the locations container */
+.locations-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box;
+}
+
+/* Style for each location */
+.location {
+    text-align: center; /* Center text */
+}
+.sidebar{
+    width: 25%;
+    background-color: #A9D7C3;
+    position: absolute;
+    padding: 2%;
+    height: 50%;
+    overflow: auto;
+    z-index: 999;
+    clear: left;
+    text-decoration: none;
+}
+.sidebar ul li {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 10px 0; /* Adds some spacing between items */
+    border-bottom: 1px solid #fff; /* Adds a white line between items */
+}
+.sidebar ul li a {
+    text-decoration: none; /* Removes the underline from the links */
+    color: #000; /* Adds a black color to the links */
+}
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.location img {
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+}
+.location p {
+    margin: 10px 0 0; /* Margin above the text */
+    font-size: 16px; /* Font size for location name */
+}
+
+.location-body{
+   
+    margin-left: 25%;
+}
+#locat1{
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+#locat1 li{
+    padding: 5%;
+}
+
+/* Style for the us container */
+.us-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px; /* Padding around the container */
+    box-sizing: border-box;
+}
+
+/* Style for each location */
+.about {
+    text-align: center; /* Center text */
+}
+.articlepad{
+    padding: 2%;
+}
+
+.about img {
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+    border-radius: 100px;
+}
+.about p {
+    margin: 10px 0 0; /* Margin above the text */
+    font-size: 16px; /* Font size for location name */
+    text-decoration: none;
+}
+#Deanpic{
+    display: block;
+    margin: auto auto auto auto;
+    width: 50%;  
+}
+/* login pages*/
+.logining{
+    margin: 9% 20%;
+    padding: 5% 8%;
+    text-align: center;    
+    background-color: white;
+    box-shadow: 2px 2px 7px 7px #bcbedd;
+}
+.loginbutton{
+    background-color: #4C51A3;
+    color: white;
+    padding: 2%;
+    border-radius: 8px;
+    border:none;
+    text-decoration: none;    
+    width: 80%;
+}
+.loginbutton:hover{
+    background-color: #A9D7C3;
+}
+
+.about p {
+    margin: 10px 0 0; /* Margin above the text */
+    font-size: 16px; /* Font size for location name */
+}
+table {
+    width: 100%;
+    padding: 3%;
+}
+td {
+    width: 25%;
+}
+
+.artists {
+    text-align: center;
+    padding: 3%;
+}
+.artists img {
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+    border-radius: 100px;
+}
+.artists p {
+    font-size: 16px; /* Font size for location name */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+/* Style for artists artwork */
+.artworks {
+    text-align: center; /* Center text */
+}
+
+.artworks img {
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+}
+.artworks p {
+    margin: 10px 0 0; /* Margin above the text */
+    font-size: 16px; /* Font size for location name */
+}
+.artworks a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.artist-description {
+    text-align: center;
+    padding: 3%;
+}
+.artist-description img {
+    border-radius: 100px;
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px;
+    object-fit: cover;
+}
+/* Style buy button */
+.buy-button {
+    background-color: #294785; /* Green background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Padding for button size */
+    font-size: 16px; /* Button font size */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Change background color on hover */
+.buy-button:hover {
+    background-color: #94BDAB; /* Darker green on hover */
+}
+
+form {
+    display:grid;
+    padding: 20%;
+    padding-top:5%;
+}
+#review{
+    height: 200px;
+    width: 60%;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 17px;
+}
+#speclabel{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    
+}
+#psp{
+    font-size: 20px;
+    text-align: center;
+}
+.accomodate{
+    column-count: 3;
+    column-gap: 10%;
+    column-rule-style: groove;
+    column-rule-width: 5%;
+    column-rule-color: #b5c61b;
+}
+#mainvid{
+    margin-left:auto;
+    margin-right:auto;
+}
+.artists {
+    text-align: center;
+    padding: 3%;
+}
+.artists img {
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+    border-radius: 100px;
+}
+.artists p {
+    font-size: 16px; /* Font size for location name */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+/* Style for artists artwork */
+.artworks {
+    text-align: center; /* Center text */
+}
+
+.artworks img {
+    object-fit: cover; /* Ensure images cover the container while cropping */
+    max-width: 100%; /* Limit maximum width of images */
+}
+.artworks p {
+    margin: 10px 0 0; /* Margin above the text */
+    font-size: 16px; /* Font size for location name */
+}
+.artworks a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+.artist-description {
+    text-align: center;
+    padding: 3%;
+}
+.artist-description img {
+    border-radius: 100px;
+    width: 200px; /* Make the image responsive to container width */
+    height: 200px;
+    object-fit: cover;
+}
+/* Style buy button */
+.buy-button {
+    background-color: #294785; /* Green background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Padding for button size */
+    font-size: 16px; /* Button font size */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Change background color on hover */
+.buy-button:hover {
+    background-color: #94BDAB; /* Darker green on hover */
+}
+@media (max-width: 600px) {
+    .navigation {
+        padding: 5%;
+        text-align: left;
+        position: sticky;
+        top: 0;  
+        z-index: 1000;
+    }
+    .menu-icon img{
+        display: block; /* This ensures the hamburger menu appears */
+    }
+    /* Hide the checkbox */
+    #menu-toggle {
+        display: none;
+    }
+    /* Style the menu icon */
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .map-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    /* Style the navigation */
+    #navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: left;
+        min-width: 100px;
+        background-color: #A9D7C3;
+        border: 1px solid #92c0ac;
+        width: 20%; /* Adjust width as needed */
+    }
+    /* Display navigation when checkbox is checked */
+    #menu-toggle:checked + .menu-icon + #navbar {
+        display: inline-block;
+    }
+    /* Navigation styles */
+    .navi {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navi li a {
+        display: block;
+        padding: 15%;
+        text-decoration: none;
+        color: white;
+        text-align: left;
+        right: 5px
+    }
+    /* Dropdown menu styles */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #A9D7C3;
+        min-width: 100px;
+        z-index: 1;
+    }
+    .dropdown-content a {
+        padding: 12px 16px;
+        display: block;
+    }
+    .logo img {
+        width: 20%;
+        height: 20%;
+    }
+    .logo h1 {
+        font-size: 200%;
+    }
+    .accomodate{
+        column-count: 1;
+        column-gap: 100%;
+        column-rule-style: none;
+        column-rule-width: 0%;
+        column-rule-color: none;
+    }
+    #review{
+        height: 200%;
+        width: 40%;
+        text-align: center;
+    }
+}
